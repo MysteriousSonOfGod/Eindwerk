@@ -1,0 +1,21 @@
+general:
+  own_address: '15.15.249'
+  rate_limit: 6
+
+connection:
+  tunneling:
+    gateway_ip: '192.168.0.173'
+    gateway_port: '3671'
+    #local_ip: '192.168.0.201'
+
+groups:
+
+  light:
+
+      # Dimmer
+      dimmer.Light_1: {group_address_switch: '0/0/4', group_address_brightness: '0/2/0', group_address_switch_state: '0/1/3'}
+
+  expose_sensor:
+
+    vermogen_watt.Power:
+      {group_address: '1/0/0', value_type: 'power'}
