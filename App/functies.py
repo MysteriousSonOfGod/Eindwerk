@@ -21,7 +21,7 @@ async def S3A():
 async def S4A():
     xknx = XKNX(config='xknx.yaml')
     await xknx.start()
-    await xknx.devices['schakelaar4.Light_1'].set_brightness(255/3)
+    await xknx.devices['schakelaar4.Light_1'].set_brightness(255)
     await xknx.stop()
 
 async def S1U():
