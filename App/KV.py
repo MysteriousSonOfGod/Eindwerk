@@ -387,7 +387,7 @@ ScreenManager:
     
     MDRaisedButton:
         text: "Verbruiker aan"
-        pos_hint: {'center_x': 0.50, 'top': 0.55}
+        pos_hint: {'center_x': 0.50, 'top': 0.35}
         md_bg_color: 255/255, 214/255, 0, 1
         on_release: app.S4AL()
     
@@ -396,6 +396,16 @@ ScreenManager:
         pos_hint: {'center_x': 0.50, 'top': 0.45}
         md_bg_color: 255/255, 214/255, 0, 1
         on_release: app.S4UL()
+        
+    MDSlider:
+        size_hint_x: 0.50
+        pos_hint: {'center_x': 0.50, 'top': 1}
+        min: 0
+        max: 100
+        value: 100
+        step: 1
+        hint: False
+        color: app.theme_cls.accent_color
 
     FloatLayout:
         MDToolbar:
